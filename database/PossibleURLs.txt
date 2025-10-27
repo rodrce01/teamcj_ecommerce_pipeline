@@ -1,0 +1,5 @@
+Examples of possible work from 
+https://scrape.do/blog/amazon-scraping/
+"https://datalemur.com/blog/amazon-data-science"
+"https://saturncloud.io/blog/how-to-add-jupyter-notebook-to-github/"
+https://expertbeacon.com/amazon-scraper/
