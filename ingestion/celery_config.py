@@ -1,0 +1,1 @@
+#celery configuration file: sets up broker and backend for distributed task processing
