@@ -4,3 +4,12 @@ https://scrape.do/blog/amazon-scraping/
 "https://saturncloud.io/blog/how-to-add-jupyter-notebook-to-github/"
 https://expertbeacon.com/amazon-scraper/
 https://spatial-data-mining-winter2025.readthedocs.io/en/latest/notebooks/L3/association_rules.html
+
+Possible datasets for Walmart and Amazon:
+https://github.com/luminati-io/Free-datasets/blob/main/walmart-products.csv
+https://www.opendatabay.com/data/consumer/ba5a3f75-9969-4b36-883a-cf5747336ae1
+https://www.kaggle.com/datasets/yasserh/walmart-dataset
+
+https://aws.amazon.com/search/?searchQuery=amazon+product+dataset
+https://aws.amazon.com/marketplace/search/results?searchTerms=Amazon+product+dataset&PRICING_MODEL=FREE&filters=PRICING_MODEL
+https://docs.aws.amazon.com/data-exchange/latest/userguide/open-data.html
