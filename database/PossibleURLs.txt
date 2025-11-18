@@ -9,7 +9,10 @@ Possible datasets for Walmart and Amazon:
 https://github.com/luminati-io/Free-datasets/blob/main/walmart-products.csv
 https://www.opendatabay.com/data/consumer/ba5a3f75-9969-4b36-883a-cf5747336ae1
 https://www.kaggle.com/datasets/yasserh/walmart-dataset
-
+Also have been looking at Ebay, Walmart, Etsy, Amazon site structure
 https://aws.amazon.com/search/?searchQuery=amazon+product+dataset
 https://aws.amazon.com/marketplace/search/results?searchTerms=Amazon+product+dataset&PRICING_MODEL=FREE&filters=PRICING_MODEL
 https://docs.aws.amazon.com/data-exchange/latest/userguide/open-data.html
+
+API:
+https://rapidapi.com/letscrape-6bRBa3QguO5/api/real-time-amazon-data/playground/apiendpoint_9c8ae19a-5167-4074-bacb-3e6d57b010b2
