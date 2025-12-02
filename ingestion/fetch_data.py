@@ -5,33 +5,24 @@
 #https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status
 #list of best endpoints to use: 
 import requests
+import json
 
-url = "https://real-time-amazon-data.p.rapidapi.com/search" #after / is endpoint listed in api
+Searchurl = "https://real-time-amazon-data.p.rapidapi.com/search" #after / is endpoint listed in api
+#other options: products-by-category, product-details, product-reviews, product-review-details, top-product-reviews, product-offers
+#more: 
+#Sellers: seller-profile, seller-reviews, seller-products
+#deals and best sellers: best-sellers, deals-v2, deal-products, promo-code-details
+#don't know if i need to use influencers: influencer-profile, influencer-posts, influencer-post-products
+# or utility: asin-to-gtin, product-category-list
 
 querystring = {"query":"Phone","page":"1","country":"US","sort_by":"RELEVANCE","product_condition":"ALL","is_prime":"false","deals_and_discounts":"NONE"}
-
+#searching for phone, first page of results, in US only, not only prime, any condition, not only deals/discounts
 headers = {
 	"x-rapidapi-key": "953d586932msh91b3af1832b66a6p106484jsnb9956f4a03a1",
 	"x-rapidapi-host": "real-time-amazon-data.p.rapidapi.com"
 }
 
-response = requests.get(url, headers=headers, params=querystring)
+response = requests.get(Searchurl, headers=headers, params=querystring)
 
-print(response.json())
-base_url = "https://real-time-amazon-data.p.rapidapi.com/"
-def get_amazon_info(variable): #haven't decided on variable yet
-    url = f"{base_url}/search{variable}" #variations galore!!!
-    response1 = requests.get(url)
-    print(response1)
-
-    if response1.status_code ==200: #200 is ok
-        amazon_data = response1.json()
-        return amazon_data
-    else:
-        print(f"failed to retrieve data: {response1.status_code}")
-
-amazon_var = "phone" #example
-amazon_info = get_amazon_info(amazon_var)
-if amazon_info:
-    print(f"Variable: {amazon_info["variable"]}") #variable is given variable. can return price, color, vendor, etc.
-    #may need to be lowercase, uppercase, standardized
+print(response.json()) 
+#will have data scraping from individual stuff to plug in
