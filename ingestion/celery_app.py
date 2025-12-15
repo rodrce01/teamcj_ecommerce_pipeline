@@ -1,6 +1,7 @@
 from celery import Celery
 import os
-import ingestion.tasks
+
+import env_setup
 
 celery_app = Celery(
 	'amazon_tasks', #fetch products
